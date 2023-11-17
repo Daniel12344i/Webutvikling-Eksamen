@@ -5,18 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Index</title>
+    <link rel="icon" type="img/png" sizes="32x32" href="/img/logo1.png" />
+    <!-- den henta jeg fra https://www.w3schools.com/html/html_favicon.asp -->
   </head>
   <body>
     <header>
-      <img class="logo" src="logo.png" alt="Logo" />
+      <a href="index.html">
+        <img class="logo" src="img/logo1.png" alt="Logo" />
+      </a>
       <nav class="navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="index.html" class="nav-item active">Home</a></li>
           <li><a href="products.html" class="nav-item">Portfolio</a></li>
           <li><a href="about.html" class="nav-item">About</a></li>
-          <li><a href="#" class="nav-item">Contact</a></li>
+          <li><a href="#" class="nav-item contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <main class="main-content">
+      <section class="content-section">
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="Video/mountains.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figure>
+          <a
+            href="https://unsplash.com/photos/turned-on-macbook-air-displaying-coding-application-b18TRXc8UPQ"
+            ><img
+              src="img/macbook1.jpg"
+              alt="Macbook Image"
+              class="mobile-image"
+          /></a>
+        </figure>
+
+        <h1 class="headline">Compelling headline</h1>
+        <p class="paragraph">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+          ipsum ipsa doloribus sint minima expedita consequatur corrupti numquam
+          quisquam? Tenetur nobis sed, alias maxime dicta veritatis totam fugiat
+          molestiae error.
+        </p>
+        <a href="#" class="read-more-link">
+          <button class="read-more-button">Read more about our services</button>
+        </a>
+      </section>
+
+      <section class="enganging-section">
+        <h2>Enganging subheading.What can you help your visitors with</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          minima illum recusandae repellendus? Aliquid alias iste distinctio,
+          aspernatur dolor architecto debitis, labore inventore molestiae porro
+          cum eos at harum? Non!
+        </p>
+      </section>
+    </main>
   </body>
 </html>

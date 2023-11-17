@@ -189,8 +189,8 @@ header {
 
       .content-section {
         display: flex;
-     
         height: 250px;
-        padding-bottom: 30px;
+        padding-bottom: 70px;
+        padding-top: 10px;
       }
 }

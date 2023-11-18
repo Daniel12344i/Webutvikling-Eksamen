@@ -102,22 +102,29 @@ header {
     border: 10px solid #e6bd43 ;
     cursor: pointer;
     font-weight: bold;
+    text-align: center;
     
   }
     
   .read-more-button:hover{
+
     background-color: #000;
     color: #e6bd43;
     border: 10px solid #000 ;
+
+
   }
 
 .enganging-section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 30px 30px;
+    margin: 70px ;
+    
     
 }
+
+
 
 .mobile-image {
     display: none;
@@ -125,16 +132,85 @@ header {
   
 
 
+.company-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    align-items: center;
+    background-color: #e6bd43;
+    
+    
+    
+}
+
+
+.company-image{
+   max-width: 100%;
+   height: auto;
+}
+
+.about-us-content{
+    flex: 1;
+    
+    
+}
+
+
+ 
 
 
 
 
+.read-more-about-us-button{
+    background: white;
+    color:black;
+    border: 3px solid #000 ;
+    padding: 10px;
+    font-weight: bold;
+  }
+    
+  .read-more-about-us-button:hover{
+    background-color:#000 ;
+    border: 3px solid #000 ;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: #e6bd43;
+  }
+
+  
+  .our-service-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-top: 50px;
+  }
+
+  
+
+ .our-service-section h2{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+ }
+ .article-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
+ 
+ }
+
+ 
+  
+
+ 
 
 
-
-
-
-
+  
 
 /* Media Query for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
@@ -187,10 +263,24 @@ header {
         z-index: -1;
       }
 
+      .read-more-button{
+        color: black;
+      }
       .content-section {
         display: flex;
         height: 250px;
         padding-bottom: 70px;
         padding-top: 10px;
       }
+
+
+
+      .company-section{
+        flex-direction: column;
+        text-align: center;
+      }
+
+
+      
 }
+

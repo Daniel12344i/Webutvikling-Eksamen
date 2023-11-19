@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    max-height: 50px; 
+    max-height: 70px; 
 }
 
 .navigation {
@@ -185,6 +185,7 @@ header {
     justify-content: center;
     margin-bottom: 70px;
     margin-top: 50px;
+    align-items: center;
   }
 
   
@@ -196,7 +197,6 @@ header {
  }
  .article-container{
   display: flex;
-  justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
   text-align: center;
@@ -333,6 +333,15 @@ body.scroll-top #backToTopBtn:hover {
   opacity: 1;
 }
 
+/* Media Query for ipad Responsiveness */
+@media only screen
+  and (max-width: 1024px) {
+
+  .article-container{
+        flex-wrap: wrap;
+      }
+}
+
 
 /* Media Query for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
@@ -383,6 +392,7 @@ body.scroll-top #backToTopBtn:hover {
         height: 100%;
        object-fit: cover;
         z-index: -1;
+        opacity: 0.5;
       }
 
       .read-more-button{
@@ -403,6 +413,9 @@ body.scroll-top #backToTopBtn:hover {
       }
 
 
+      .article-container{
+        flex-wrap: wrap;
+      }
 
       footer{
         display: flex;

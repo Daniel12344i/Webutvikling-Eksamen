@@ -73,14 +73,15 @@ header {
 
 .content-section {
     position: relative;
-    height: 100vh; /* Adjust the height as needed */
+    
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 300px;
     padding: 40px;
+    justify-content: center;
   }
   
   .background-video {
@@ -184,7 +185,7 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 70px;
-    margin-top: 50px;
+    margin-top: 100px;
     align-items: center;
   }
 
@@ -198,9 +199,11 @@ header {
  .article-container{
   display: flex;
   gap: 50px;
-  flex-wrap: wrap;
+  
   text-align: center;
   margin-top: 30px;
+  align-items: center;
+  
  
  }
 
@@ -261,6 +264,7 @@ footer{
   padding: 30px;
   align-items: center;
   background-color:#000 ; 
+  height: 100px;
 }
 
 
@@ -321,7 +325,19 @@ footer{
   font-size: 16px;
   transition: opacity 0.3s ease-in-out;
 }
+.mobile-image-portfolio{
 
+   position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+       object-fit: cover;
+        z-index: -1;
+        opacity: 0.5;
+        
+}
 
 
 body.scroll-top #backToTopBtn {
@@ -333,13 +349,220 @@ body.scroll-top #backToTopBtn:hover {
   opacity: 1;
 }
 
+.sections-container{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.underline{
+  color: #e6bd43;
+  position: relative;
+  bottom: 0;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background-color: #e6bd43;
+  
+}
+
+
+
+
+
+
+
+.categories-section{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  
+ 
+  
+}
+
+.categories-section a{
+  margin-right: 10px;
+  
+  
+
+}
+
+.explore-buttons{
+  border: 2px solid black;
+  background-color: #fff;
+  cursor: pointer;
+color:#252525 ;
+padding: 10px;
+font-size: 20px;
+margin-left: 10px;
+margin-bottom: 20px;
+
+
+
+}
+
+.explore-buttons:hover{
+  background-color:#000 ;
+  color: #e6bd43;
+  align-items: center;
+  
+}
+
+.branding-imgs{
+  display: flex;
+  flex-direction:row ;
+  
+  flex-wrap: wrap;
+}
+
+
+
+.branding-image{
+max-width: 100%;
+margin-bottom: 10px;
+
+}
+
+
+.mobile-image-about-us{
+  position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+       object-fit: cover;
+        z-index: -1;
+        opacity: 1;
+}
+
+
+.content-section-about{
+  position: relative;
+    
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  
+  text-align: center;
+  height: 300px;
+  padding: 70px;
+  justify-content: center;
+}
+.about-us-company{
+  position: relative;
+  overflow:unset;
+  display: flex;
+  flex-flow: column;
+  
+  padding: 20px;
+  justify-content: center;
+  background-color: white;
+  width: 50%;
+  left: 50%;
+  text-align: start;
+  opacity: 0.9;
+  
+  
+  
+}
+
+
+
+
+.our-main-clients{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6bd43;
+  padding:20px;
+}
+
+.clients-img-section{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+}
+
+.clients-img-section img{
+  max-height: 80px;
+}
+.contact-container{
+  background-color: rgb(221, 220, 220);
+  display: flex;
+  flex-direction: row;
+  
+  gap: 70px;
+  justify-content: center;
+  
+  
+}
+.contact-container h2{
+  text-align: center;
+  width: 100%;
+  display: inline;
+
+}
+
+.message-section{
+  width: 48%;
+  
+  
+  
+}
+
+.contact-info{
+  width: 48%;
+}
+.message-section label {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+.coantact-about-us{
+  background-color: rgb(87, 81, 81);
+  text-align: center;
+ 
+}
+
+
+
+
+
+
+
+
+
+
 /* Media Query for ipad Responsiveness */
 @media only screen
   and (max-width: 1024px) {
 
-  .article-container{
-        flex-wrap: wrap;
-      }
+    .article-container{
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      
+
+    }
+
+    
+   
+    
+    
+    
+  
 }
 
 
@@ -413,16 +636,15 @@ body.scroll-top #backToTopBtn:hover {
       }
 
 
-      .article-container{
-        flex-wrap: wrap;
-      }
+     
 
       footer{
         display: flex;
        
        flex-direction: column;
        align-items: center;
-        padding: 20px;
+      
+        padding-bottom: 100px;
       }
 
     .logo-footer,
@@ -433,8 +655,35 @@ body.scroll-top #backToTopBtn:hover {
         margin: 10px 0; 
     }
       
+    
         
+    .content-section-about{
+      padding: 0px 50px 20px 30px;
       
+      height: auto;
+      overflow: visible;
+      display:block ;
+  
+    }
+    
+    .video-sectionen{
+      margin-bottom: 50px;
+    }
+
+    .about-us-company {
+      width: auto;
+      text-align: center;
+      left: 0;
+      margin-right: 30px;
+     
+    margin-left: 30px;
+      
+    }
+
+    .nav-item.active{
+      text-decoration: none;
+    }
+
       }
 
 

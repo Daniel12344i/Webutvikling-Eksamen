@@ -714,11 +714,11 @@ justify-content: space-between;
     }
 
     .logo {
-        margin-bottom: 10px; /* Just an example margin for spacing */
+        margin-bottom: 10px; 
     }
 
     .navigation {
-        margin-top: 10px; /* Just an example margin for spacing */
+        margin-top: 10px; 
     }
 
     .nav-list {

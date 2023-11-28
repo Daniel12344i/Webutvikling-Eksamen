@@ -16,22 +16,25 @@
   </head>
 
   <body>
+    <a href="#main-grid" class="skip-link" id="skipToMainContent">Skip to main content</a>
+
     <div grid-container>
-    <header id="header-grid">
+    <header id="header-grid" role="banner">
       <a href="index.html">
         <img class="logo" src="img/logo1.png" alt="Logo" />
       </a>
-      <nav class="navigation">
+      <nav class="navigation" role="navigation" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-item">Home</a></li>
-          <li><a href="products.html" class="nav-item">Portfolio</a></li>
-          <li><a href="about.html" class="nav-item active">About</a></li>
-          <li><a href="#collectivers" class="nav-item contact active">Contact</a></li>
+          <li><a href="index.html" class="nav-item" title="Go to Home" aria-label="Go to Home">Home</a></li>
+          <li><a href="products.html" class="nav-item" title="Explore Our Portfolio" aria-label="Explore Our Portfolio">Portfolio</a></li>
+          <li><a href="about.html" class="nav-item active" title="Current Page: About" aria-current="Current Page: About">About</a></li>
+          <li><a href="#collectivers" class="nav-item contact active" title="Contact Us" aria-label="Contact Us">Contact</a></li>
         </ul>
       </nav>
+      
     </header>
 
-    <main class="main-content" id="main-grid">
+    <main class="main-content" id="main-grid" role="main" >
     <section class="content-section-about">
         <figure>
           <a
@@ -53,8 +56,8 @@
             totam fugiat molestiae Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Omnis deserunt
           </p>
-          <a href="#our-services" class="read-more-link">
-            <button class="read-more-button">Get in touch with us</button>
+          <a href="#collectivers" class="read-more-link">
+            <button class="read-more-button" role="tab">Get in touch with us</button>
           </a>
         </section>
       </section>
@@ -189,7 +192,7 @@
 
     </section>
     </main>
-    <footer id="footer-grid">
+    <footer id="footer-grid" role="contentinfo">
       <section class="logo-footer">
         <a href="index.html">
           <img src="img/logo1.png" alt="Logo" class="footer-img" />
@@ -201,28 +204,13 @@
       </section>
 
       <section class="social-media-section">
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          class="social-media-icon"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          class="social-media-icon"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          class="social-media-icon"
-          ><i class="fa fa-linkedin"></i
-        ></a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-media-icon" title="Visit Facebook Page" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-media-icon" title="Visit Instagram Profile" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-media-icon" title="Visit LinkedIn Profile" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
       </section>
     </footer >
   </div>
-    <a href="about.html" id="backToTopBtn" title="Go to top">
+  <a href="index.html" id="backToTopBtn" title="Go to top" role="button" aria-label="Back to Top">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="1em"

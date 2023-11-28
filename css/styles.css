@@ -673,6 +673,26 @@ justify-content: space-between;
 
 
 
+/* Hide the skip link by default */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Make the skip link visible when it receives focus */
+.skip-link:focus {
+  opacity: 1;
+  top: 0;
+}
+
 
 
 /* Media Query for ipad */
